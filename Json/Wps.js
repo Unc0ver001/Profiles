@@ -4,7 +4,6 @@
 [Script]
 http-response ^https?:\/\/account\.wps\.cn\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Unc0ver001/Unc0ver/main/Json/Wps.js
 
-Wps.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Unc0ver001/Unc0ver/main/Json/Wps.js,type=http-response,pattern=^https://account.wps.*/api/users/
 [MITM]
 hostname = account.wps.cn
 */
