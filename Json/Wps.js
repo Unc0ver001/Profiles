@@ -9,9 +9,7 @@ hostname = account.wps.cn
 */
 
 var obj = JSON.parse($response.body);
-
 var id = obj.userid;
-
 obj = {
   exp: 0,
   level: 3,
@@ -41,7 +39,5 @@ obj = {
   wealth: 0,
   expire_time: 3333333333
 };
-
 obj.userid = id;
-
 $done({ body: JSON.stringify(obj) });
