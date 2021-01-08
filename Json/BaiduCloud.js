@@ -14,7 +14,7 @@ obj = {
   "product_infos": [{
     "product_id": "5310897792128633390",
     "start_time": 1417260485,
-    "end_time": 2247483648,
+    "end_time": 2147483648,
     "buy_time": "1417260485",
     "cluster": "offlinedl",
     "detail_cluster": "offlinedl",
