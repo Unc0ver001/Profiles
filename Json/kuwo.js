@@ -1,6 +1,5 @@
 /*
 Application: KWYY
-Development by Î°ÈË, made by ²»Íü³õĞÄØ¼
 */
 
 var body = $response.body;
