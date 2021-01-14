@@ -1,0 +1,23 @@
+#!name=©Y²»Íü³õÐÄØ¼
+#!desc=Script collection
+#!system=ios
+
+[Script]
+# > 001 YLYK (2021.01.10)
+ylyk.js = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/new-app-api\.ylyk\.com\/v1\/(user\/myinfo\/my|goods\/(getAudioCourseGoodsDetail|getAlbumGoodsDetail|getFilterAlbumCourseGoodsList|getAlbumCourseGoodsLiveList|getLiveCourseGoodsDetail)),script-path=https://github.com/Unc0ver001/Unc0ver/raw/main/Json/ylyk.js
+# > 002 KWYY (2021.01.11)
+kuwo.js = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),script-path=https://github.com/Unc0ver001/Unc0ver/raw/main/Json/kuwo.js
+music.pay?uid = 2=requires-body=1,max-size=0,script-path=http://musicpay.kuwo.cn/music.pay?uid=2,type=http-response,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?uid\=\d+
+# > 003 TBBJ
+tb_price.js = type=http-request,requires-body=1,pattern=^http://.+/amdc/mobileDispatch,script-path=https://github.com/Unc0ver001/Unc0ver/raw/main/Json/tbbj.js
+tb_price.js = type=http-response,requires-body=1,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,script-path=https://github.com/Unc0ver001/Unc0ver/raw/main/Json/tbbj.js
+# > 004 JDBJ
+jd_price.js = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://github.com/Unc0ver001/Unc0ver/raw/main/Json/jdbj.js
+# > 005 WPS
+Wps.js = type=http-response,requires-body=1,max-size=0,pattern=^https://account.wps.*/api/users/,script-path=https://github.com/Unc0ver001/Unc0ver/raw/main/Json/Wps.js
+# > 006 VXAD
+Wechat.js = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,script-path=https://github.com/Unc0ver001/Unc0ver/raw/main/Json/vxad.js
+# > 007 BDWP
+BaiduCloud.js = type=http-response,requires-body=1,max-size=0,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,script-path=https://github.com/Unc0ver001/Unc0ver/raw/main/Json/BaiduCloud.js
+[MITM]
+hostname = %APPEND%, new-app-api.ylyk.com, vip1.kuwo.cn, musicpay.kuwo.cn, account.wps.cn, mp.weixin.qq.com, pan.baidu.com
